@@ -51,7 +51,7 @@ function App() {
     <>
       <div className="relative h-screen w-full">
         <img src="./joke-app-bg.jpg" className="h-full w-full" alt="joke App Background"></img>
-        <div className="bg-orange-700 lg:w-1/2 lg:h-auto absolute w-[90%] top-[190px] left-[15px]  lg:top-[220px] lg:left-[330px] lg:p-5 p-3 shadow-xl rounded ">
+        <div className="bg-orange-700 lg:w-1/2 lg:h-auto absolute w-[90%] top-[190px] left-[20px]  lg:top-[220px] lg:left-[330px] lg:p-5 p-3 shadow-xl rounded ">
         <h1 className="text-center font-bold text-3xl text-white">JOKE APP</h1>
         <div className="flex mt-4">
         <input className=" outline-none lg:w-[80%] w-[70%] p-3 rounded-l-lg" placeholder="enter category..." onChange={handleChange} value={category}></input>
