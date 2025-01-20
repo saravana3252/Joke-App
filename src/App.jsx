@@ -54,8 +54,8 @@ function App() {
         <div className="bg-orange-700 lg:w-1/2 lg:h-auto absolute w-[90%] top-[190px] left-[25px]  lg:top-[220px] lg:left-[330px] lg:p-5 p-3 shadow-xl rounded ">
         <h1 className="text-center font-bold text-3xl text-white">JOKE APP</h1>
         <div className="flex mt-4">
-        <input className=" outline-none lg:w-[80%] w-[75%] p-3 rounded-l-lg" placeholder="enter category..." onChange={handleChange} value={category}></input>
-        <button className="lg:w-[20%] w-[25%] p-3  bg-gradient-to-t from-blue-600 to-blue-900 text-white font-semibold rounded-r-lg" onClick={handleSubmit}>SEARCH</button>
+        <input className=" outline-none lg:w-[80%] w-[70%] p-3 rounded-l-lg" placeholder="enter category..." onChange={handleChange} value={category}></input>
+        <button className="lg:w-[20%] w-[30%] p-3  bg-gradient-to-t from-blue-600 to-blue-900 text-white font-semibold rounded-r-lg" onClick={handleSubmit}>SEARCH</button>
         </div>
          {error && <p className="mt-5 text-xl text-white">{error}</p>}
         {data && <p className="mt-5 text-xl text-white">{data}</p>}
