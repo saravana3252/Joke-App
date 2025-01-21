@@ -14,7 +14,7 @@ const FetchJoke = createAsyncThunk("jokes/jokescategory",async (category)=>{
 
 
 const initialState= {
-    joke:"ENTER JOKE CATEGORY!"
+    joke:"Available joke category : [ animal, career, celebrity, dev, explicit, fashion, food, history, money, movie, music, political, religion, science, sport, travel ]"
 }
 
 const jokeSlice = createSlice({
