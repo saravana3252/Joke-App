@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchJoke } from "./jokeSlice";
+import { clearJoke } from "./jokeSlice";
 
 function App() {
   const [category, setCategory] = useState("");
@@ -12,6 +13,8 @@ function App() {
  
   function handleChange(e) {
     setCategory(e.target.value);
+    dispatch(clearJoke()); 
+
   }
 
  
@@ -20,6 +23,8 @@ function App() {
       return; 
     }
     dispatch(FetchJoke(category));
+    dispatch(clearJoke()); 
+
   }
 
   return (

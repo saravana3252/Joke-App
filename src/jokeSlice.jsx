@@ -7,7 +7,7 @@ const FetchJoke = createAsyncThunk(
     return fetch(`https://api.chucknorris.io/jokes/random?category=${category}`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Invalid category or request failed.");
+          throw new Error("Invalid category");
         }
         return res.json();
       })
@@ -25,7 +25,7 @@ const FetchJoke = createAsyncThunk(
 
 
 const initialState = {
-  joke: "Available joke categories: [ animal, career, celebrity, dev, explicit, fashion, food, history, money, movie, music, political, religion, science, sport, travel ]",
+  joke: "Available joke categories - [animal, career, celebrity, dev, explicit, fashion, food, history, money, movie, music, political, religion, science, sport, travel]",
   loading: false,
   error: null,
 };
@@ -34,7 +34,11 @@ const initialState = {
 const jokeSlice = createSlice({
   name: "joke",
   initialState,
-  reducers: {},
+  reducers: {
+    clearJoke(state) {
+      state.joke = "Available joke categories - [animal, career, celebrity, dev, explicit, fashion, food, history, money, movie, music, political, religion, science, sport, travel]";
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(FetchJoke.pending, (state) => {
@@ -55,3 +59,4 @@ const jokeSlice = createSlice({
 
 export default jokeSlice;
 export { FetchJoke };
+export const { clearJoke } = jokeSlice.actions; 
