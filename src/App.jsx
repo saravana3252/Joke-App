@@ -28,14 +28,14 @@ function App() {
   }
 
   return (
-    <div className="relative h-screen w-full bg-gray-900">
+    <div className="relative h-svh w-full bg-gray-900">
 
       <img
         src="./joke-app-bg.jpg"
         className="h-full w-full object-cover"
         alt="Joke App Background"
       />
-      <div className="bg-orange-700 h-svh lg:w-1/2 lg:h-auto absolute w-[90%] top-[250px] left-[20px] lg:top-[220px] lg:left-[330px] lg:p-5 p-3 shadow-xl rounded">
+      <div className="bg-orange-700  lg:w-1/2 lg:h-auto absolute w-[90%] top-[250px] left-[20px] lg:top-[220px] lg:left-[330px] lg:p-5 p-3 shadow-xl rounded">
         <h1 className="text-center font-bold text-3xl text-white">JOKE APP</h1>
 
     
